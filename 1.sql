@@ -1,0 +1,1 @@
+select year,ROUND(AVG(salary),2)AS 'Average salary'  from salaries group by year order by year DESC;
