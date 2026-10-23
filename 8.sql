@@ -1,0 +1,1 @@
+select salary from salaries where player_id = (select player_id from performances where HR = (select MAX(HR) from performances)) AND year = 2001 ;

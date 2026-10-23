@@ -1,0 +1,1 @@
+ select teams.name , round(AVG(salaries.salary),2) AS 'average salary' from teams join salaries on (teams.id = salaries.team_id) where salaries.year = 2001 group by salaries.team_id, teams.name order by "average salary" limit 5;
